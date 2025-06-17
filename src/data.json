@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Chocolate Dream Cake",
+        "price": 45.99,
+        "category": "cakes",
+        "image": "🍰",
+        "description": "Rich chocolate cake with layers of chocolate ganache",
+        "rating": 4.9,
+        "featured": true
+    },
+    {
+        "id": 2,
+        "name": "Strawberry Cheesecake",
+        "price": 38.99,
+        "category": "cakes",
+        "image": "🍰",
+        "description": "Creamy cheesecake topped with fresh strawberries",
+        "rating": 4.8,
+        "featured": true
+    },
+    {
+        "id": 3,
+        "name": "Vanilla Cupcakes (6pk)",
+        "price": 18.99,
+        "category": "cupcakes",
+        "image": "🧁",
+        "description": "Classic vanilla cupcakes with buttercream frosting",
+        "rating": 4.7,
+        "featured": false
+    },
+    {
+        "id": 4,
+        "name": "Chocolate Croissants (4pk)",
+        "price": 12.99,
+        "category": "pastries",
+        "image": "🥐",
+        "description": "Buttery croissants filled with chocolate",
+        "rating": 4.6,
+        "featured": true
+    },
+    {
+        "id": 5,
+        "name": "Apple Danish",
+        "price": 4.99,
+        "category": "pastries",
+        "image": "🥐",
+        "description": "Flaky pastry with sweet apple filling",
+        "rating": 4.5,
+        "featured": false
+    },
+    {
+        "id": 6,
+        "name": "Red Velvet Cake",
+        "price": 52.99,
+        "category": "cakes",
+        "image": "🍰",
+        "description": "Classic red velvet with cream cheese frosting",
+        "rating": 4.9,
+        "featured": true
+    },
+    {
+        "id": 7,
+        "name": "Blueberry Muffins (4pk)",
+        "price": 14.99,
+        "category": "muffins",
+        "image": "🧁",
+        "description": "Fresh blueberry muffins with streusel topping",
+        "rating": 4.4,
+        "featured": false
+    },
+    {
+        "id": 8,
+        "name": "Tiramisu",
+        "price": 32.99,
+        "category": "desserts",
+        "image": "🍰",
+        "description": "Italian coffee-flavored dessert with mascarpone",
+        "rating": 4.8,
+        "featured": true
+    }
+]
