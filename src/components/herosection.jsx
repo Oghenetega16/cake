@@ -1,4 +1,5 @@
 import { Award, Heart, Clock, Star, Plus, ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function HeroSection({ addToCart, featuredProducts }) {
     return (
@@ -11,12 +12,12 @@ export default function HeroSection({ addToCart, featuredProducts }) {
                     <p className="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto">Handcrafted cakes, pastries, and desserts made with love and the finest ingredients</p>
                     <div className="space-x-4">
                         <button
-                        className="bg-white text-pink-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+                        className="bg-white text-pink-600 px-8 py-3 rounded-full font-semibold cursor-pointer hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
                         >
                         Order Now
                         </button>
                         <button
-                        className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-pink-600 transition-all duration-300"
+                        className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold cursor-pointer hover:bg-white hover:text-pink-600 transition-all duration-300"
                         >
                         Learn More
                         </button>
@@ -59,7 +60,7 @@ export default function HeroSection({ addToCart, featuredProducts }) {
                 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {featuredProducts.map((product) => (
-                            <div key={product.id} className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                            <div key={product.id} className="bg-white rounded-lg shadow-md hover:shadow-xl cursor-pointer transition-all duration-300 transform hover:scale-105">
                                 <div className="p-6">
                                     <div className="text-6xl text-center mb-4">{product.image}</div>
                                     <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
@@ -84,12 +85,10 @@ export default function HeroSection({ addToCart, featuredProducts }) {
                     </div>
                 
                     <div className="text-center mt-12">
-                        <button
-                        className="bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition-colors inline-flex items-center"
-                        >
-                        View Full Menu
-                        <ArrowRight className="h-4 w-4 ml-2" />
-                        </button>
+                        <Link to="/menu"><button className="bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition-colors inline-flex items-center cursor-pointer">View Full Menu
+                            <ArrowRight className="h-4 w-4 ml-2" />
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>

@@ -46,9 +46,6 @@ export default function App() {
         return cart.reduce((total, item) => total + (item.price * item.quantity), 0)
     }
 
-    const getTotalItems = () => {
-        return cart.reduce((total, item) => total + item.quantity, 0)
-    }
     const filteredProducts = selectedCategory === 'all' 
         ? products 
         : products.filter(product => product.category === selectedCategory)
@@ -70,7 +67,7 @@ export default function App() {
 
     return (
         <Routes>
-            <Route path='/' element={<HomePage addToCart={addToCart} featuredProducts={featuredProducts} setShowCart={setShowCart} setSelectedCategory={setSelectedCategory} getTotalItems={getTotalItems} setMobileMenuOpen={setMobileMenuOpen} mobileMenuOpen={mobileMenuOpen} />} />
+            <Route path='/' element={<HomePage addToCart={addToCart} featuredProducts={featuredProducts} setShowCart={setShowCart} setSelectedCategory={setSelectedCategory} cart={cart} setMobileMenuOpen={setMobileMenuOpen} mobileMenuOpen={mobileMenuOpen} />} />
             <Route path='/menu' element={<MenuPage setSelectedCategory={setSelectedCategory} selectedCategory={selectedCategory} filteredProducts={filteredProducts} addToCart={addToCart} />} />
             <Route path='/about' element={<AboutPage />} />
             <Route path='/contact' element={<ContactPage />} />
